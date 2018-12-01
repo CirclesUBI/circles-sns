@@ -18,7 +18,6 @@ myApp.on('userAdded', function (endpointArn, deviceId) {
 })
 
 exports.register = function (req, res) {
-  console.log(req)
   var deviceId = req.body['deviceId']
 
   console.log('\nRegistering user with deviceId: ' + deviceId)
