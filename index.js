@@ -10,6 +10,10 @@ var app = express()
 // requests for our use
 app.use(bodyParser())
 
+app.get('/', (req, res) => {
+  res.send('hi ed!')
+})
+
 // Path used to register for push notifications
 // push.register is the handler function
 app.post('/register', push.register)
