@@ -14,11 +14,11 @@ app.use(bodyParser())
 // push.register is the handler function
 app.post('/register', push.register)
 
-app.listen(80, function (error) {
+app.listen(3000, function (error) {
   if (error) {
     // Something unexpected happened
     throw error
   }
 
-  console.log('Listening on 127.0.0.1:80')
+  console.log('Listening on 127.0.0.1:3000')
 })
