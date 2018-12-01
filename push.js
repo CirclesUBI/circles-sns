@@ -11,6 +11,8 @@ var myApp = new SNS({
   platformApplicationArn: process.env.ANDROID_ARN
 })
 
+console.log(myApp)
+
 // Handle user added events
 myApp.on('userAdded', function (endpointArn, deviceId) {
   console.log('\nSuccessfully added device with deviceId: ' + deviceId + '.\nEndpointArn for user is: ' + endpointArn)
